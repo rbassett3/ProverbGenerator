@@ -1,21 +1,21 @@
 import random
 
-with open("IdiomList.txt", 'r') as f:
+with open("Proverbist.txt", 'r') as f:
     Lines = f.readlines()
 Words = []
 map(Words.extend, [("! " + line[:-1] + " .  \n").split() for line in Lines if line != "\n"])
 
-class Idiom:
-    """An idiom generator, which takes a text corpus W at initialization. 
+class Proverb:
+    """An proverb generator, which takes a text corpus W at initialization. 
 W is an array of words with '!' as a starting token and '.' as an end token. 
-Generate an idiom with Idiom.Generate().
+Generate an idiom with Proverb.Generate().
 
 This method is a Markov chain model. The state is the current word. 
 To proceed to the next state (word), we sample from all of the possible words 
 which occur after the current word in the corpus.
 
-Example:    Idiom = Idiom(Words)
-            Idiom.Generate()
+Example:    Proverb = Proverb(Words)
+            Proverb.Generate()
             >>> "A fish is always greener on the boat" """
 
     def __init__(self, Words):
@@ -32,4 +32,4 @@ Example:    Idiom = Idiom(Words)
             else:
                 print(curWord),
     
-Idiom = Idiom(Words)
+Proverb = Proverb(Words)
