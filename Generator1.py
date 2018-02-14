@@ -1,6 +1,6 @@
 import random
 
-with open("Proverbist.txt", 'r') as f:
+with open("ProverbList.txt", 'r') as f:
     Lines = f.readlines()
 Words = []
 map(Words.extend, [("! " + line[:-1] + " .  \n").split() for line in Lines if line != "\n"])
