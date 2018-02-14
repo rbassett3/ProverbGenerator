@@ -1,4 +1,4 @@
 # ProverbGenerator
 This is a repository for different attempts at randomly generating English proverbs.
 
-The main training corpus is courtesy of Gary Martin at phrases.org.uk
+The main training corpus is courtesy of Gary Martin at phrases.org.uk. Also quotes are taken from a Reddit dataset.
