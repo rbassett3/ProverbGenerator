@@ -6,9 +6,9 @@ Words = []
 map(Words.extend, [("! " + line[:-1] + " .  \n").split() for line in Lines if line != "\n"])
 
 class Proverb:
-    """An proverb generator, which takes a text corpus W at initialization. 
+    """A proverb generator, which takes a text corpus W at initialization. 
 W is an array of words with '!' as a starting token and '.' as an end token. 
-Generate an idiom with Proverb.Generate().
+Generate an idiom with Idiom.Generate().
 
 This method is a Markov chain model. The state is the current word. 
 To proceed to the next state (word), we sample from all of the possible words 
