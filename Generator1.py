@@ -3,7 +3,7 @@ import random
 class Proverb:
     """A proverb generator, which takes a text corpus W at initialization. 
 W is an array of words with '!' as a starting token and '.' as an end token. 
-Generate an idiom with Idiom.Generate().
+Generate a proverb with Proverb.Generate().
 
 This method is a Markov chain model. The state is the current word. 
 To proceed to the next state (word), we sample from all of the possible words 
